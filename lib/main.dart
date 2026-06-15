@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
+import 'pages/add_student_page.dart';
+import 'pages/profile_page.dart';
 
 
 void main() {
@@ -32,8 +34,9 @@ class StudentDirectoryApp extends StatelessWidget {
 
       initialRoute: '/',
       routes: {
-        // Home Page Job Arsalla
         '/': (context) => const HomePage(),
+        '/add': (context) => const AddStudentPage(),
+        '/profile': (context) => const ProfilePage(),
       },
     );
   }
